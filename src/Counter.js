@@ -21,16 +21,9 @@ class Counter extends React.Component {
 }
 
 function Button({ onClick, children }) {
-  const [timesClicked, setTimesClicked] = React.useState(0);
-
-  const handleOnClick = () => {
-    setTimesClicked(timesClicked + 1);
-    onClick();
-  };
   return (
     <div>
-      <button onClick={handleOnClick}>{children}</button>
-      <span>Times Clicked: {timesClicked}</span>
+      <button onClick={onClick}>{children}</button>
     </div>
   );
 }

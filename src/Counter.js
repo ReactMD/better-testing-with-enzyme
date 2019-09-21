@@ -22,6 +22,7 @@ import React from 'react';
 // }
 
 function Button({ onClick, children }) {
+<<<<<<< HEAD
   return (
     <div>
       <button onClick={onClick}>{children}</button>
@@ -41,6 +42,11 @@ function Counter() {
       <h3>{count}</h3>
       <Button onClick={addOne}>Add +</Button>
       <Button onClick={subtractOne}>Subtract -</Button>
+=======
+  return (
+    <div>
+      <button onClick={onClick}>{children}</button>
+>>>>>>> master
     </div>
   );
 }
